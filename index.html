@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HomeRunnr | Curate Your Home's Rhythmic Pulse</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#6f797b",
+              "on-secondary": "#ffffff",
+              "surface-dim": "#d8dadb",
+              "primary": "#004c56",
+              "on-primary-fixed": "#001f24",
+              "surface-tint": "#066874",
+              "primary-container": "#006672",
+              "on-secondary-container": "#576769",
+              "secondary": "#516163",
+              "surface": "#f8fafb",
+              "on-error-container": "#93000a",
+              "inverse-on-surface": "#eff1f2",
+              "surface-bright": "#f8fafb",
+              "on-secondary-fixed": "#0e1e20",
+              "secondary-fixed": "#d4e6e8",
+              "on-background": "#191c1d",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#ffc8b6",
+              "tertiary": "#7e2600",
+              "primary-fixed": "#a3effc",
+              "secondary-container": "#d4e6e8",
+              "on-tertiary-fixed": "#380c00",
+              "surface-container-high": "#e6e8e9",
+              "on-primary": "#ffffff",
+              "on-primary-fixed-variant": "#004f58",
+              "surface-container": "#eceeef",
+              "tertiary-fixed": "#ffdbcf",
+              "tertiary-container": "#a13a0f",
+              "primary-fixed-dim": "#87d2e0",
+              "on-error": "#ffffff",
+              "secondary-fixed-dim": "#b9cacc",
+              "tertiary-fixed-dim": "#ffb59c",
+              "on-tertiary-fixed-variant": "#822800",
+              "on-surface": "#191c1d",
+              "error": "#ba1a1a",
+              "on-secondary-fixed-variant": "#3a494b",
+              "on-tertiary": "#ffffff",
+              "on-surface-variant": "#3f484a",
+              "on-primary-container": "#95e1ef",
+              "inverse-surface": "#2e3132",
+              "surface-container-low": "#f2f4f5",
+              "surface-variant": "#e1e3e4",
+              "error-container": "#ffdad6",
+              "outline-variant": "#bec8ca",
+              "surface-container-highest": "#e1e3e4",
+              "background": "#f8fafb",
+              "inverse-primary": "#87d2e0"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .hero-gradient {
+        background: linear-gradient(45deg, #004c56 0%, #006672 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-background font-body antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold bg-gradient-to-r from-teal-900 to-teal-700 bg-clip-text text-transparent font-headline tracking-tight">HomeRunnr</div>
+<div class="hidden md:flex items-center space-gap-8 gap-8">
+<!-- <a class="text-teal-700 font-bold border-b-2 border-teal-700 pb-1 font-headline text-sm tracking-tight" href="#">Features</a>
+<a class="text-slate-600 hover:text-teal-900 transition-colors font-headline text-sm font-semibold tracking-tight" href="#">Pricing</a>
+<a class="text-slate-600 hover:text-teal-900 transition-colors font-headline text-sm font-semibold tracking-tight" href="#">About</a>
+<a class="text-slate-600 hover:text-teal-900 transition-colors font-headline text-sm font-semibold tracking-tight" href="#">Support</a> -->
+</div>
+<div class="flex items-center gap-4">
+<!-- <button class="hidden md:block text-slate-600 font-semibold text-sm hover:bg-slate-100/50 px-4 py-2 rounded-lg transition-all">Login</button>
+<button class="bg-primary hover:bg-primary-container text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition-all active:scale-95">Get Started</button> -->
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-8 py-16 md:py-24 max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8 ml-0 md:ml-10">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-background tracking-tight leading-[1.1]">
+                        Curate Your Home's <span class="text-primary">Rhythmic Pulse.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-lg leading-relaxed">
+                        Next-level scheduling for the domestic curator. Transform house management from a chore into a choreographed masterpiece.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="hero-gradient text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all active:scale-95">
+                            Get Started - Free
+                        </button>
+<button class="bg-surface-container-low text-on-surface px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-high transition-all">
+                            Watch the Story
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl">
+<img alt="Modern minimalist home interior with natural light" class="w-full h-full object-cover" data-alt="Modern minimalist home interior with floor to ceiling windows soft natural light and warm wood accents in a clean organized living space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBss29X_Fg4MT_XHKcsCbjHsOGO08rvbgPO82FGuuhGWVtp_4kICqOTGk2l3gPtDhsO_CAOr0l2K08Qnv-6Ah4-OiOQBFwOc9tZ6L2cWB2zr5t9FaZtkIfJ1X1UELSPY64An16AAgMGt3ODh3OqNCs14I4RxdXWgbbYJRvd10D8XdPG_c99OCaUI6WA_uhAjqWnB-4xhcITFBkfiTaxsI6O95NijdYq4h9O32ubBk5UvZqsEDo0-Xw1r4mI79DbV1WylJXG7HnI3fRK"/>
+</div>
+<!-- Floating UI Element -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-xl border border-outline-variant/15 max-w-sm">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="task_alt">task_alt</span>
+<span class="font-headline font-bold text-sm">Next Up</span>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center bg-primary-fixed/30 rounded-lg gap-8 py-3 px-5">
+<span class="text-sm font-semibold">Morning Yoga</span>
+<span class="text-xs text-primary font-bold">07:00 AM</span>
+</div>
+<div class="flex justify-between items-center bg-surface-container-low rounded-lg opacity-50 gap-8 py-3 px-5">
+<span class="text-sm font-semibold">Pet Feeding</span>
+<span class="text-xs text-on-surface-variant">08:30 AM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature 1 & 2: Bento Grid Style -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-12 gap-6">
+<!-- Feature 1 -->
+<div class="md:col-span-7 bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between">
+<div>
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">Precision Control</span>
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold mb-6">Beyond the Calendar</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-md">
+                                Most apps manage appointments. We manage existence. Track the granular details from cat feeding rituals to the complex logistics of school runs.
+                            </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container-low rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="pets">pets</span>
+<span class="font-semibold text-sm">Pet Routines</span>
+</div>
+<div class="p-4 bg-surface-container-low rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="school">school</span>
+<span class="font-semibold text-sm">School Logistics</span>
+</div>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="md:col-span-5 bg-primary p-10 rounded-xl text-white overflow-hidden relative">
+<h2 class="font-headline text-3xl font-extrabold mb-6">Routines That Stick</h2>
+<div class="space-y-4 relative z-10">
+<div class="bg-white/10 backdrop-blur-md p-4 rounded-xl flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="restaurant" data-weight="fill" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="font-semibold">Cat Feeding</span>
+</div>
+<div class="flex gap-2">
+<span class="bg-white/20 px-2 py-1 rounded text-[10px] font-bold">06:00</span>
+<span class="bg-primary-fixed text-primary px-2 py-1 rounded text-[10px] font-bold">12:00</span>
+<span class="bg-white/20 px-2 py-1 rounded text-[10px] font-bold">17:00</span>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-4 rounded-xl flex justify-between items-center opacity-60">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
+<span class="font-semibold">Plant Mist</span>
+</div>
+<span class="text-xs">Every Tuesday</span>
+</div>
+</div>
+<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-primary-container rounded-full blur-3xl opacity-50"></div>
+</div>
+<!-- Feature 3 -->
+<div class="md:col-span-5 bg-surface-container-lowest p-10 rounded-xl">
+<div class="bg-tertiary-fixed text-on-tertiary-fixed inline-flex items-center gap-2 px-3 py-1 rounded-full mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="notifications_active">notifications_active</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Live Sync</span>
+</div>
+<h2 class="font-headline text-3xl font-extrabold mb-4">Household Alerting</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                            No more shouting across the hallway. When a task is marked done, the relevant household members get a subtle, elegant nudge.
+                        </p>
+</div>
+<!-- Feature 4 -->
+<div class="md:col-span-7 bg-surface-container-lowest p-10 rounded-xl relative overflow-hidden">
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="flex-1">
+<h2 class="font-headline text-3xl font-extrabold mb-4">Upcoming Tasks</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                                    Always know what's on the horizon. Our "Timeline Pulse" view shows you the next 24 hours with crystalline clarity.
+                                </p>
+</div>
+<div class="w-full md:w-48 space-y-2">
+<div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[75%] rounded-full"></div>
+</div>
+<p class="text-[10px] font-bold text-primary-container text-right">75% OF DAILY RHYTHM COMPLETE</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 w-full rounded-t-[2.5rem]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-10 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-teal-900 font-headline mb-2">HomeRunnr</div>
+<p class="font-body text-xs font-medium tracking-wide text-slate-500">© 2024 HomeRunnr. The Domestic Curator.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-body text-xs font-medium tracking-wide text-slate-500 hover:text-teal-600 transition-colors" href="#">Privacy Policy</a>
+<a class="font-body text-xs font-medium tracking-wide text-slate-500 hover:text-teal-600 transition-colors" href="#">Terms of Service</a>
+<a class="font-body text-xs font-medium tracking-wide text-slate-500 hover:text-teal-600 transition-colors" href="#">Cookie Settings</a>
+<a class="font-body text-xs font-medium tracking-wide text-slate-500 hover:text-teal-600 transition-colors" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6ECP5PM9K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H6ECP5PM9K');
+</script>
+</html>
